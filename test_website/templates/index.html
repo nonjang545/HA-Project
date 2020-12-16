@@ -4,6 +4,14 @@
 
 {% block content %}
 <h1>
-    Template Homepage
+    What did you eat today?
 </h1>
+    <div> Please log in to your account </div>
+        <form action="/action_page.php">
+            <label for="userID">ID:</label>
+            <input type="text" id="userID" name="userID"><br><br>
+            <label for="userPW">PW:</label>
+            <input type="text" id="userPW" name="userPW"><br><br>
+            <input type="button" value="Login">
+        </form>
 {% endblock %}
