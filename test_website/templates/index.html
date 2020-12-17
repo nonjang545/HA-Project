@@ -1,17 +1,22 @@
-{% extends 'base.html' %}
-
-{% block title %}Home{% endblock %}
-
-{% block content %}
-<h1>
-    What did you eat today?
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Home</title>
+</head>
+<body>
     <div> Please log in to your account </div>
         <form action="/action_page.php">
             <label for="userID">ID:</label>
             <input type="text" id="userID" name="userID"><br><br>
             <label for="userPW">PW:</label>
             <input type="text" id="userPW" name="userPW"><br><br>
-            <input type="button" value="Login">
+            <input type="button" value="Log In">
+            
+            <!-- SignIn Button -->
+            <form action="signin.html">
+                <input type="submit" value="Sign In" />
+            </form>
         </form>
-{% endblock %}
+</body>
+</html>
