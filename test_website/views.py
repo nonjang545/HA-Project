@@ -7,3 +7,6 @@ def index(request):
 
 def signin(request):
     return render(request, 'signin.html')
+
+def test(request):
+    return render(request, 'test.html')
