@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+    body {
+        background-color: linen;
+    }
+
+    
+</style>
 <meta charset="utf-8">
 <title>Home</title>
 </head>
 <body>
-    <div> Please log in to your account </div>
-        <form action="/action_page.php">
-            <label for="userID">ID:</label>
-            <input type="text" id="userID" name="userID"><br><br>
-            <label for="userPW">PW:</label>
-            <input type="text" id="userPW" name="userPW"><br><br>
-            <input type="submit" value="Log In">
-        </form>
-    
-    <div> Sign in? </div>
-        <a href="signin.html">
-           <botton>Sign In</botton> 
-        </a>
+    <h1> Track your meals, and manage your diet and health. </h1>
+    <div> What did you eat today? </div>
+        <pre></pre>
 
-     <div> Test </div>
-        <a href="test.html">
-           <botton>Move to Test</botton> 
+        <form action="/action_page.php">
+            <div class="input-group">
+                <label for="Breakfast">Breakfast:</label>
+                <input type="text" id="Breakfast" name="Breakfast" placeholder="Search your breakfast here." size="30"><br><br>
+                
+                    <button class="btn btn-default" type="button">Search</button>
+                
+            </div>
+
+            <label for="Lunch">Lunch:</label>
+            <input type="text" id="Lunch" name="Lunch" placeholder="Search your lunch here." size="30"><br><br>
+            
+            <label for="Dinner">Dinner:</label>
+            <input type="text" id="Dinner" name="Dinner" placeholder="Search your dinner here." size="30"><br><br>
+        </form>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" value="50">
+            +<input type="number" id="b" value="25">
+            =<output name="x" for="a b"></output>
+        </form>
+
+    <div> Do you want to record your meals daily? Please sign in. </div>
+        <a href="/signin">
+           <button>Sign In</button> 
         </a>
 
     <script>
