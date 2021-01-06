@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    body {
-        background-color: linen;
-    }
-
-    
-</style>
 <meta charset="utf-8">
 <title>Home</title>
 </head>
 <body>
-    <h1> Track your meals, and manage your diet and health. </h1>
-    <div> What did you eat today? </div>
+    <h1 style="text-align:center; position:relative; top:40px; font-size: xx-large;"> Track your meals, and manage your diet and health. </h1>
+    <div style="text-align:center; position:relative; top:80px; font-size: x-large;"> What did you eat today? </div>
         <pre></pre>
 
         <form action="/action_page.php">
-            <div class="input-group">
+            <div class="input-group" style="text-align:center; position:relative; top:140px">
                 <label for="Breakfast">Breakfast:</label>
                 <input type="text" id="Breakfast" name="Breakfast" placeholder="Search your breakfast here." size="30"><br><br>
-                
-                    <button class="btn btn-default" type="button">Search</button>
-                
+                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>
             </div>
 
-            <label for="Lunch">Lunch:</label>
-            <input type="text" id="Lunch" name="Lunch" placeholder="Search your lunch here." size="30"><br><br>
+            <div class="input-group" style="text-align:center; position:relative; top:160px">
+                <label for="Lunch">Lunch:</label>
+                <input type="text" id="Lunch" name="Lunch" placeholder="Search your lunch here." size="30" style="position:relative; left:10px"><br><br>
+                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>
+            </div>
             
-            <label for="Dinner">Dinner:</label>
-            <input type="text" id="Dinner" name="Dinner" placeholder="Search your dinner here." size="30"><br><br>
+            <div class="input-group" style="text-align:center; position:relative; top:180px">
+                <label for="Lunch">Dinner:</label>
+                <input type="text" id="Lunch" name="Lunch" placeholder="Search your dinner here." size="30" style="position:relative; left:8px"><br><br>
+                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>   
+            </div> 
         </form>
 
-        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-            <input type="range" id="a" value="50">
-            +<input type="number" id="b" value="25">
-            =<output name="x" for="a b"></output>
-        </form>
-
-    <div> Do you want to record your meals daily? Please sign in. </div>
+    <div style="text-align:right; position:relative; top:-200px; right:100px"> Do you want to record your meals daily? Please sign in.
         <a href="/signin">
-           <button>Sign In</button> 
+           <button class="btn btn-default" type="button" style="color: red">Sign In</button> 
         </a>
+    </div>
+
+    <div style="text-align:right; position:relative; top:-180px; right:100px"> Do you already have your account? Please log in.
+        <a href="/signin">
+           <button class="btn btn-default" type="button" style="color: red">Log In</button> 
+        </a>
+    </div> 
 
     <script>
         alert("Welcome! Please report what you ate today.")
