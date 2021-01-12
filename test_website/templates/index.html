@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+    // javascript comes here.
+</script>
 <meta charset="utf-8">
 <title>Home</title>
 </head>
@@ -13,36 +16,36 @@
             <div class="input-group" style="text-align:center; position:relative; top:140px">
                 <label for="Breakfast">Breakfast:</label>
                 <input type="text" id="Breakfast" name="Breakfast" placeholder="Search your breakfast here." size="30"><br><br>
-                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>
+                <span><input type="button" value="Search" style="color:blue"></span>
             </div>
 
             <div class="input-group" style="text-align:center; position:relative; top:160px">
                 <label for="Lunch">Lunch:</label>
                 <input type="text" id="Lunch" name="Lunch" placeholder="Search your lunch here." size="30" style="position:relative; left:10px"><br><br>
-                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>
+                <span><input type="button" value="Search" style="color:blue"></span>
             </div>
             
             <div class="input-group" style="text-align:center; position:relative; top:180px">
                 <label for="Lunch">Dinner:</label>
                 <input type="text" id="Lunch" name="Lunch" placeholder="Search your dinner here." size="30" style="position:relative; left:8px"><br><br>
-                <button class="btn btn-default" type="button" style="color: blue; position:relative; top:-39px; left:180px">Search</button>   
+                <span><input type="button" value="Search" style="color:blue"></span>
             </div> 
         </form>
 
     <div style="text-align:right; position:relative; top:-200px; right:100px"> Do you want to record your meals daily? Please sign in.
         <a href="/signin">
-           <button class="btn btn-default" type="button" style="color: red">Sign In</button> 
+            <input type="button" value="Sign In" style="color:blue">
         </a>
     </div>
 
     <div style="text-align:right; position:relative; top:-180px; right:100px"> Do you already have your account? Please log in.
-        <a href="/signin">
-           <button class="btn btn-default" type="button" style="color: red">Log In</button> 
+        <a href="/login">
+            <input type="button" value="Log In" style="color:blue">
         </a>
     </div> 
 
     <script>
-        alert("Welcome! Please report what you ate today.")
+        alert("What did you eat today? :)")
     </script>
 </body>
 </html>
